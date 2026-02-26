@@ -17,23 +17,23 @@
   </header>
   <main>
     <div class="container">
-      <form class="row g-3">
-        <div class="col-md-6">
+      <form class="row g-3" name="calculator" action="">
+        <div class="col-md-4">
           <label for="inputCost" class="form-label">&euro; al Km</label>
-          <input type="number" class="form-control" id="inputCost">
+          <input type="number" class="form-control" id="inputCost" name="inputCost">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <label for="inputKm" class="form-label">Km da percorrere</label>
           <input type="number" class="form-control" id="inputKm">
         </div>
-        <div class="col-12">
+        <div class="col-md-4">
           <label for="inputAdge" class="form-label">Età</label>
           <input type="number" class="form-control" id="inputAdge" placeholder="Adge">
         </div>
         <div class="col-12">
         </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Calcola</button>
+        <div class="col-12 text-center">
+          <button type="submit" id="btn_calc" class="btn btn-primary">Calcola</button>
         </div>
       </form>
     </div>

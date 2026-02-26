@@ -9,6 +9,9 @@ const user_adge = 70;
 const user_km = 100;
 let price;
 
+let live_user_adge = document.forms["calculator"]["inputAdge"].value;
+console.log(live_user_adge);
+
 if (user_adge <= minor) {
   price = (cost_km * user_km) - ((cost_km * user_km) * discount_minors) / 100
 } else if (user_adge >= over) {
