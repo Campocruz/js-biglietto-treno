@@ -16,4 +16,4 @@ if (user_adge <= minor) {
 } else {
   price = (cost_km * user_km)
 }
-console.log(price);
+console.log(price.toFixed(2) + '€');
