@@ -5,12 +5,11 @@ const minor = 18;
 const over = 65;
 const discount_minors = 20;
 const discount_over = 40;
-const user_adge = 70;
-const user_km = 100;
-let price;
 
-let live_user_adge = document.forms["calculator"]["inputAdge"].value;
-console.log(live_user_adge);
+let price;
+// Take Variabili from user
+const user_adge = Number(prompt('Inserisci la tua età'));
+const user_km = Number(prompt('Inserisci i Km'));
 
 if (user_adge <= minor) {
   price = (cost_km * user_km) - ((cost_km * user_km) * discount_minors) / 100
@@ -20,3 +19,8 @@ if (user_adge <= minor) {
   price = (cost_km * user_km)
 }
 console.log(price.toFixed(2) + '€');
+
+
+// Prove 
+let live_user_adge = document.forms["calculator"]["inputAdge"].value;
+console.log(live_user_adge);
