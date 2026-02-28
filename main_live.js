@@ -3,12 +3,12 @@ Controllare la maggioranza, la minoranza o l'uguaglianza
 di due numeri inseriti dall'utente con la funzione prompt
 */
 
-const my_adge = Number(prompt('Inserisci la TUA età'));
-const your_adge = Number(prompt('Inserisci la SUA età'));
+const my_age = Number(prompt('Inserisci la TUA età'));
+const your_age = Number(prompt('Inserisci la SUA età'));
 
-if (my_adge < your_adge) {
+if (my_age < your_age) {
   console.log('La tua età è minore della sua')
-} else if (my_adge > your_adge) {
+} else if (my_age > your_age) {
   console.log('La tua età è maggiore della sua')
 } else {
   console.log('Le vostre età suono uguali')
