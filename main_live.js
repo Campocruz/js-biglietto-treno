@@ -1,4 +1,8 @@
-// Take Variabili from user
+/*
+Controllare la maggioranza, la minoranza o l'uguaglianza
+di due numeri inseriti dall'utente con la funzione prompt
+*/
+
 const my_adge = Number(prompt('Inserisci la TUA età'));
 const your_adge = Number(prompt('Inserisci la SUA età'));
 
@@ -10,6 +14,10 @@ if (my_adge < your_adge) {
   console.log('Le vostre età suono uguali')
 }
 
+/*
+Il gioco del pari e dispari usando la funzione random 
+per generare un numero da 1 a 9
+*/
 
 const user_pair = Number(prompt('Pari digita 1', '1'));
 const user_number = Number(prompt('Insert the number from 1 to 9'))
@@ -39,6 +47,10 @@ if (!(user_number <= 0 || user_number > 9)) {
 else {
   console.log('Hai inserito un numero sbagliato')
 }
+
+/*
+Contare quanti minuti restano per la prossima ora
+*/
 
 const actual_date = new Date();
 const actual_hours = actual_date.getHours();
