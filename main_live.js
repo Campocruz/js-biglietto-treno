@@ -39,3 +39,15 @@ if (!(user_number <= 0 || user_number > 9)) {
 else {
   console.log('Hai inserito un numero sbagliato')
 }
+
+const actual_date = new Date();
+const actual_hours = actual_date.getHours();
+const actual_minute = actual_date.getMinutes();
+let next_hours = actual_hours + 1;
+console.log(actual_hours, actual_minute);
+if (actual_minute != 0 ) {
+  if (next_hours >= 24) {next_hours = next_hours - 24}
+  let remain_minutes = 60 - actual_minute
+  console.log(`La prossima ora è ${next_hours} e mancano ${remain_minutes} minuti`)
+}
+else {console.log(`Sono esattamente le ${actual_hours} e mancano esattamente 60 minuti alle ${next_hours}`)}
